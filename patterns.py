@@ -28,3 +28,11 @@
 #     if (i==int(n/2)):   
 #         print("* "  * int(n/2) + "  " + "* " * int(n/2))
 
+#using recursion to print a pattern
+def pattern(n):
+    if n == 0:
+        return
+    print("* " * n)
+    pattern(n - 1)  
+n = int(input("Enter the number of rows for the pattern: "))
+pattern(n)
